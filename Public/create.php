@@ -113,7 +113,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <div id="productType" class="row mb-3 col-4">
                 <label for="productType" class="col-6 col-form-label">Type Switcher</label>
                 <div class="col-6">
-                    <select class="form-select" name="productType">
+                    <select class="form-select" name="productType" onchange="showSelectedInput();">
                         <option value="">Type Switcher</option>
                         <option value="DVD">DVD</option>
                         <option value="Furniture">Furniture</option>
