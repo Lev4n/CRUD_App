@@ -1,5 +1,5 @@
 <?php
-$pdo = require_once '../DBConn.php';
+$pdo = require_once '../../DBConn.php';
 
 
 $errors = [];
@@ -59,7 +59,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 ?>
 
-<?php require_once '../Views/Partials/header.php' ?>
+<?php require_once '../../Views/Partials/header.php' ?>
 
 <body>
 
@@ -164,8 +164,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
 
     </form>
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
 </body>
-<?php require_once '../views/partials/footer.php' ?>
+<?php require_once '../../views/partials/footer.php' ?>
 
 </html>

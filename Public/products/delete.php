@@ -4,7 +4,7 @@ $errors = [];
 
 if (isset($_POST['delete']) && !empty($_POST['checkedProducts'])) {
   $delProducts = implode(',', $_POST['checkedProducts']);
-  $pdo = require_once '../DBConn.php';
+  $pdo = require_once '../../DBConn.php';
   $query = "DELETE FROM products WHERE id IN ($delProducts)";
   $stmt = $pdo->prepare($query);
   $stmt->execute();

@@ -1,6 +1,6 @@
 <?php
 
-$pdo = require_once '../DBConn.php';
+$pdo = require_once '../../DBConn.php';
 
 $statement = $pdo->prepare('SELECT * FROM products');
 $statement->execute();
@@ -8,7 +8,7 @@ $products = $statement->fetchAll(PDO::FETCH_ASSOC);
 
 ?>
 
-<?php require_once '../views/partials/header.php' ?>
+<?php require_once '../../views/partials/header.php' ?>
 
 <body>
     <nav class="navbar navbar-expand-lg">
@@ -53,9 +53,9 @@ $products = $statement->fetchAll(PDO::FETCH_ASSOC);
 
 
 
-    <script src="script.js"></script>
+    <script src="/"></script>
     
 </body>
-<?php require_once '../views/partials/footer.php' ?>
+<?php require_once '../../views/partials/footer.php' ?>
 
 </html>
