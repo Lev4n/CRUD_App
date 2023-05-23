@@ -49,7 +49,6 @@ $products = $statement->fetchAll(PDO::FETCH_ASSOC);
                 <?php } ?>
             </div>
         </div>
-
     </form>
 
 

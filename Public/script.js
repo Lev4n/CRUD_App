@@ -21,7 +21,3 @@ function showSelectedInput() {
     }
   }
 }
-
-// Listening for changes to the productTypeSelect element
-const productTypeSelect = document.querySelector("select[name='productType']");
-productTypeSelect.addEventListener("change", handleProductTypeChange);
